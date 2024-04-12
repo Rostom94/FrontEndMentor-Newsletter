@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/images/favicon-32x32.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Newsletter | BAOUCHI Rostom</title>
+  </head>
+  <body>
+    <div class="success">
+      <img src="./assets/images/icon-success.svg" alt="" />
+      <div class="success-text">
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to
+          <span>ash@loremcompany.com</span>. Please open it and click the button
+          inside to confirm your subscription
+        </p>
+        <button type="button" id="btn_reset">Dismiss message</button>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="hero-img"></div>
+      <div class="text">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="" /> Product discovery
+            and building what matters
+          </li>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="" /> Measuring to
+            ensure updates are a success
+          </li>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="" /> And much more !
+          </li>
+        </ul>
+        <form action="#">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+            required
+            id="email"
+            placeholder="email@company.com"
+          />
+          <button type="button" id="btn_submit">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
